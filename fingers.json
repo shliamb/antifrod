@@ -1,0 +1,83 @@
+[
+    {
+        "ip": "46.39.56.1-7",
+        "Mouse": true,
+        "Battery": "Battery Status not supported",
+        "Canvas": "45fa5b4d7672d83ffef04f0a30360a3b61d---",
+        "processors": 8,
+        "WebGL": {
+            "vendor": "Mesa",
+            "renderer": "GeForce GTX 980, or similar"
+        },
+        "Fingerprint": {
+            "userAgent": "Mozilla\/5.0 (X11; Ubuntu; Linux x86_64; rv:127.0) Gecko\/20100101 Firefox\/127.0",
+            "language": "en-US",
+            "platform": "Linux x86_64",
+            "screenResolution": "1920x1080",
+            "timezoneOffset": -180,
+            "plugins": [
+                "PDF Viewer",
+                "Chrome PDF Viewer",
+                "Chromium PDF Viewer",
+                "Microsoft Edge PDF Viewer",
+                "WebKit built-in PDF"
+            ]
+        },
+        "touch": 0,
+        "networkInfo": null,
+        "PerformanceTiming": {
+            "navigationStart": 1718320234078,
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 1718320234078,
+            "domainLookupStart": 1718320234136,
+            "domainLookupEnd": 1718320234150,
+            "connectStart": 1718320234150,
+            "connectEnd": 1718320234196,
+            "secureConnectionStart": 1718320234173,
+            "requestStart": 1718320234196,
+            "responseStart": 1718320234231,
+            "responseEnd": 1718320234231,
+            "domLoading": 1718320234234,
+            "domInteractive": 1718320234431,
+            "domContentLoadedEventStart": 1718320234440,
+            "domContentLoadedEventEnd": 1718320234471,
+            "domComplete": 1718320234773,
+            "loadEventStart": 1718320234773,
+            "loadEventEnd": 1718320234774
+        },
+        "NavigationTiming": {
+            "type": 1,
+            "redirectCount": 0
+        },
+        "DeviceInfo": [
+            {
+                "\u0423\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u043e": "audioinput",
+                "\u041c\u0435\u0442\u043a\u0430": "",
+                "ID": "ptK\/cVX+uUfDgbGeMTXdvWt99OL48TTCc+EoYs6SB8c="
+            },
+            {
+                "\u0423\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u043e": "audioinput",
+                "\u041c\u0435\u0442\u043a\u0430": "",
+                "ID": "goniMTo9FVZqtY\/Kzecn8Tul4SO7LaNam5gkTBs+BNY="
+            },
+            {
+                "\u0423\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u043e": "audioinput",
+                "\u041c\u0435\u0442\u043a\u0430": "",
+                "ID": "2M28IsjnSpLs11KqJsk9ck\/duB348zmhIz1N1DUM6Vg="
+            },
+            {
+                "\u0423\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u043e": "audioinput",
+                "\u041c\u0435\u0442\u043a\u0430": "",
+                "ID": "iejK7M75wRrAcyTDnPaQP+ykb+EKXKU\/N0T6YLgSkxo="
+            },
+            {
+                "\u0423\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u043e": "audioinput",
+                "\u041c\u0435\u0442\u043a\u0430": "",
+                "ID": "qX7u9Ent5qW0LUL6Jm7x1t+CC3cIwRVswPb8qcMQZ+s="
+            }
+        ]
+    }
+]
