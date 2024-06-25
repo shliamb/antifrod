@@ -2,19 +2,29 @@
 
 Скрипт для снятия данных отпечатка брауера, для определения бота и пересылки его на страницу капчи. На данный момент скрипт собирает отпечатки, для дальнейшего анализа сложных ботов, а таких оказалось пока не много. Глобально отбиться от ботов, которых учитывала яндекс метрика, удалось, просто спрятав код счетчика яндекс метрики. Счетчик подгружается, после срабатывания скрипта, пока что безусловно, так как это отсекло 98% ботов.
 
+
 Собирается файл fingers.json в корень. В нем собранные данныее. Его лучше объявить в robots.txt:
 
 User-agent: *
+
 Disallow: /fingers.json
+
+
 
 Что бы данные не индексировались, так же немешало бы, в файле .htaccess (если сервер на php) объявить 301 редирект например на главную страницу, что бы никто не мог посмотреть фал, но вы по ftp могли его забрать:
 
 RewriteEngine On
+
 php_flag register_globals off
+
 Options +FollowSymLinks
+
 Redirect 301 /fingers.json /
 
+
+
 Готовность: Собирает данные. При открытии страницы, собирается фингерпринт и отсылается в json на сервер, там переписывается файлик в корень. Так же, после открытия страницы, срабатывает скрипт сбора и подгружает счетчик яндекс метрики. Сначало, я делал так, что бы весь код страницы блокировался, пока за 150мс не выполниться скрипт джава. Но оказалось, что яндекс боты собирают для индексации страницы без использования скрипта, что привело к индексации пустых страниц. Сейчас я решил, все таки отдавать html, без кода счетчика. 
+
 
 После декабря (занят) хочу запилить универсальный API. Будет собираться на фронте отпечаток и по API отсылаться на сервер, там, если отпечаток новый - добавляется, вместе с временем посещения. Повторное посещение сайта - проверит, сколько раз данный отпечаток заходил на этот сайт, сколько раз выполнинл отказ. Если приносил отказы - на страницу проверки капчей. Кажется идеальным и униваерсальным вариантом антифрод, а главное простым.
 
@@ -26,10 +36,15 @@ ________________________________________________________________________________
 
 A script for taking the browser's fingerprint data, to identify the bot and forward it to the captcha page. At the moment, the script collects fingerprints for further analysis of complex bots, and there are not many of them yet. Globally, it was possible to fend off bots that Yandex Metrica took into account by simply hiding the Yandex metrica counter code. The counter is loaded after the script is triggered, for now, of course, since this has cut off 98% of bots.
 
+
 The fingers file is being collected.json at the root. It contains collected data. It is better to declare it in robots.txt:
 
+
 _User-agent: *_
+
 _Disallow: /fingers.json_
+
+
 
 Whatever the data is indexed, it would also not be in the file.htaccess (if the server is in php) declare 301 redirects, for example, to the main page, so that no one could see the file, but you could pick it up via ftp:
 
