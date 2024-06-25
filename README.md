@@ -1,4 +1,4 @@
-#### RU АНТИФРОД
+#### RU • АНТИФРОД:
 
 Скрипт для снятия данных отпечатка брауера, для определения бота и пересылки его на страницу капчи. На данный момент скрипт собирает отпечатки, для дальнейшего анализа сложных ботов, а таких оказалось пока не много. Глобально отбиться от ботов, которых учитывала яндекс метрика, удалось, просто спрятав код счетчика яндекс метрики. Счетчик подгружается, после срабатывания скрипта, пока что безусловно, так как это отсекло 98% ботов.
 
@@ -18,9 +18,11 @@ _Redirect 301 /fingers.json /_
 
 После декабря (занят) хочу запилить универсальный API. Будет собираться на фронте отпечаток и по API отсылаться на сервер, там, если отпечаток новый - добавляется, вместе с временем посещения. Повторное посещение сайта - проверит, сколько раз данный отпечаток заходил на этот сайт, сколько раз выполнинл отказ. Если приносил отказы - на страницу проверки капчей. Кажется идеальным и униваерсальным вариантом антифрод, а главное простым.
 
+__________________________________________________________________________________________
 
 
-#### EN ANTI-FRAUD
+
+#### EN • ANTI-FRAUD:
 
 A script for taking the browser's fingerprint data, to identify the bot and forward it to the captcha page. At the moment, the script collects fingerprints for further analysis of complex bots, and there are not many of them yet. Globally, it was possible to fend off bots that Yandex Metrica took into account by simply hiding the Yandex metrica counter code. The counter is loaded after the script is triggered, for now, of course, since this has cut off 98% of bots.
 
