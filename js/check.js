@@ -422,6 +422,13 @@ async function sendData() {
 
 
     try {
+
+
+        if (data.ip === '46.39.56.137') {  // указываю свой ip что бы не спамить своими данными
+            return;
+        }
+
+
         const response = await fetch('fingers.php', {
             method: 'POST',
             headers: {
